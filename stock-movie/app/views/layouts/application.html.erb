@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wll Ths s RNDM!</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css">
+  <link href='http://fonts.googleapis.com/css?family=Patrick+Hand|Sofia|Chelsea+Market' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class='h1'>
+Wtf Th's 's R'ND'M  !
+</div>
+<nav class='inline large' id='rightside'>
+<ul>
+  <a href='/home'><li id='home'><span class='red big'>/</span>Home</li></a>
+  <a href='/movies'><li id='movies'><span class='red big'>/</span>Movies</li></a>
+  <a href='/stock'><li id='stock'><span class='red big'>/</span>Stock</li></a>
+  <a href='/faq'><li id='faq'><span class='red big'>/</span>FAQ</li></a>
+  <!-- <a href='/about'><li id='about'><span class='red big'>/</span>About</li></a> -->
+</ul>
+</nav>
+
+<!--  -->
+    <%= yield %>
+
+
+
+<footer>
+  (c) 2013 N.B. Coded and Designed
+</footer>
+</body>
+</html>

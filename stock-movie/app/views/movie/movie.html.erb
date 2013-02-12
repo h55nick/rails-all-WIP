@@ -1,0 +1,16 @@
+
+<div class='floatright inline' id='leftside'>
+<div id='movieblock'>
+<span class='header'><%= @title %></span><br/>
+<%= @plot %>
+ <!-- <img src='<%= @posterurl %>'> -->
+
+</div>
+
+
+
+<form name="movie_input" action="/movies" method="get" class='inline clearfix'>
+<input type="text" name="movie_name" placeholder="Enter a Movie">
+<input type="submit" value="Get Info" class='submitbutton'>
+</form>
+</div>

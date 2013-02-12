@@ -1,0 +1,5 @@
+You wanted <%= params[:x] %> to be <%= params[:opp] %> by <%= params[:y] %>
+
+<br><br>
+
+The answer is: <%= params[:opp] == "+" ? params[:x].to_i + params[:y].to_i : params[:x].to_i - params[:y].to_i  %>

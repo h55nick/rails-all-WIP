@@ -1,0 +1,28 @@
+
+<div class='floatright inline' id='leftside'>
+<div id='movieblock'>
+
+<br>
+<span class='header'>
+  <%= @ticker %>
+</span>
+<br>
+<div class='inline  justleft labels'>
+Change:  <br>
+Percent: <br>
+Time:      <br>
+Price:<br>
+</div>
+<div class='inline justleft'>
+<%= @changepts %>%<br>
+<%= @percent %>%<br>
+<%= @time %><br>
+<%= @price %><br>
+</div>
+</div>
+
+<form name="stock_input" action="/stock" method="get" class='inline'>
+<input type="text" name="ticker" placeholer='Enter a stock ticker' value="<%= @ticker %>">
+<input type="submit" value="Submit">
+</form>
+</div>

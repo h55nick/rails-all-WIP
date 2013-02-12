@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Routing</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li> <a href='/a'>A</a></li>
+    <li> <a href='/b'>B</a></li>
+    <li> <a href='/one'>ONE</a></li>
+    <li> <a href='/two'>TWO</a></li>
+    <li> <a href='/three'>THREE</a></li>
+    <ul>
+</nav>
+
+<form name="input" action="/redirect" method="get">
+Where would you like to go: ( 1 , 2, 3 )<input type="text" name="input">
+<input type="submit" value="Submit">
+</form>
+
+
+<%= yield %>
+
+</body>
+</html>
