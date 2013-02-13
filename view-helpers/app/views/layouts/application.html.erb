@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ViewHelpers</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<nav>
+<div class='navdiv'><a href="/home">Home</a></div>
+<div class='navdiv'><a href="/numbers">Numbers</a></div>
+<div class='navdiv mid'>Practice with method helpers </div>
+<div class='navdiv'><a href="/text">Text</a></div>
+<div class='navdiv'><a href="/assets">Assets</a></div>
+<div class='navdiv'><a href="/url">Url</a></div>
+</nav>
+
+<%= yield %>
+
+</body>
+</html>

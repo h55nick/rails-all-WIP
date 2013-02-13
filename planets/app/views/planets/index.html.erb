@@ -1,0 +1,10 @@
+<ul>
+<% @planets.each do |t| %>
+    <li><%= link_to(t.name, planet_path(t.id))  %> has <%= pluralize(t.moons, "moon") %>
+
+      <%= button_to("Delete", delete_path(t.id) ) %><%= button_to("Edit", edit_path(t.id) ) %>
+
+    </li>
+  <%end%>
+</ul>
+

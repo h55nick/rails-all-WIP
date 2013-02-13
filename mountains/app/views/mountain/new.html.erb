@@ -1,0 +1,11 @@
+
+<span class='header'>Here you can add mountains to the database</span>
+
+<div>
+  <form name="input" action="<%=mountain_path%>" method="post" >
+  <% ["Name","Height","Location","Image"].each do |key|%>
+        Mountain  - <%=key%> <input type="text" name="mountain[<%=key.downcase%>"><br/>
+  <% end %>
+<input type="submit" value="Submit">
+</form>
+</div>

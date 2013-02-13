@@ -1,0 +1,14 @@
+
+<span class='header'> You are at the index page! <br/>
+  Here you will see all of the mountains in the database!
+</span>
+<ul>
+<% @mountain.each do |t| %>
+    <li>
+     <%=t.name%>
+      <%= button_to("Edit ", m_edit_path(t.id)) %>
+      <%= button_to("Delete ", m_delete_path(t.id)) %>
+      <%= link_to("View", m_view_path(t.id) )%>
+    </li>
+  <%end%>
+</ul>

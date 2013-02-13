@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Planets</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css">
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<nav>
+  <ul>
+  <li><%= link_to('Add Planet', planets_new_path )   %></li>
+  <li><%= link_to('View All', planets_path)  %></li>
+</ul>
+</nav>
+
+
+<br/><br/>
+<%= yield %>
+
+</body>
+</html>

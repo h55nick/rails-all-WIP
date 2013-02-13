@@ -1,0 +1,5 @@
+<ul>
+<% (1..20).to_a.each do |num| %>
+<li style='background-color: <%= cycle('#111','#555','#999') %>'> <%= num %></li>
+<%end%>
+</ul>

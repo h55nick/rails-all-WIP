@@ -1,0 +1,12 @@
+<span class='header'>Edit this mountain!</span>
+
+<div>
+  <form name="input" action="<%=m_update_path%>" method="post" >
+  <% @h.each do |key,value|%>
+        Mountain  - <%=key%>
+        <input type="text" name="mountain[<%=key.downcase%>" value="<%= value %>">
+        <br/>
+  <% end %>
+<input type="submit" value="Confirm Edit">
+</form>
+</div>
